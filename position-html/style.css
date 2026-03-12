@@ -14,3 +14,19 @@ header{
     border-bottom: 1px solid #dbdbdb;
     text-align: center;
 }
+
+main{
+    width: 500px;
+    background-color:red;
+    margin:auto;
+
+}
+
+.post{
+    position:static; /* does nothing*/
+    background-color:white;
+border:3px solid #dbdbdb;
+margin-bottom:30px;
+
+}
+.image-container{}

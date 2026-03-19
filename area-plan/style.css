@@ -6,3 +6,24 @@ h2{
     color:#6bcded;
 }
 footer {text-align:center}
+.box{
+    height: 50px;
+    width: 100px;
+    border: 1px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+#principal1{
+    display:flex;
+    justify-content: space-between;}
+    #izquierda {
+        display:flex;
+        justify-content: flex-start;
+        }
+        #derecha{
+            display:flex;
+            justify-content:flex-end;
+        }
+

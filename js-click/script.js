@@ -1,8 +1,8 @@
-let i= 0
+let i = 0;
 
-function count(){
+function count() {
     i++;
-
-    let currentclicks= new Clicks();
-    let heading = document.queryselector("h1");
-    heading.innerHTML = currentclicks;
+    let count = document.querySelector('h1');
+    count.innerHTML = i;
+    console.log(i);
+}

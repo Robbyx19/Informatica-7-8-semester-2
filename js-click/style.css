@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Mogra&family=Press+Start+2P&display=swap');
+
+body {
+    background-color:gray;
+}
+
+button {
+    cursor:pointer;
+    height:1000px;
+    width:80%;
+     font-family: "Press Start 2P", system-ui;
+
+
+
+
+
+}
+
+h1 {
+    color:white;
+     font-family: "Press Start 2P", system-ui;
+
+    align-items:center;
+}
+
+.counter {
+    width:50%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+
+
+}
+
+    background-color:#7f58cb;
+    border-radius:1rem;
+    height:500px;
+}

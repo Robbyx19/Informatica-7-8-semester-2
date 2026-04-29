@@ -1,0 +1,95 @@
+body {
+    margin:0;
+}
+
+main {
+    display:flex;
+    width:70%;
+    margin:70px auto 0;
+}
+
+header {
+    display:flex;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 10px 10px 10px;
+    background-color: #c0ddff;
+    z-index:999;
+}
+
+#title {
+    font-family:math;
+    font-size:28px;
+}
+#key {
+    font-family:fantasy;
+    font-size:25px;
+    margin:0 3px 0 0;
+}
+
+nav {
+    display:flex;
+    gap:15px;
+}
+
+.hero {
+    top:50px;
+    margin:0 0 100px 0;
+    display:flex;
+    position:relative;
+    align-items:center;
+    flex-direction:column;
+}
+
+#hero-img {
+    width:100%;
+    height:540px;
+    object-fit:cover;
+    display:flex;
+    margin: auto;
+}
+
+#hero-text {
+    text-align:center;
+    display:flex;
+    position:absolute;
+    top:10px;
+    margin:auto;
+    font-size:3rem;
+}
+
+#cards {
+    top:1000px;
+    margin:auto;
+    width:70%;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.card {
+    background-color: #dff1ff;
+    text-align:center;
+    width:300px;
+    padding:10px;
+    margin:20px;
+    border-radius:1rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.card img {
+    width:250px;
+}
+
+.footer {
+    text-align:center;
+    font-family:sans-serif;
+    background-color:#a1ccff;
+    padding:6px;
+}

@@ -1,24 +1,47 @@
-body {
-    display:flex;
-    flex-direction:column;
+header{
+    position: sticky;
+    top:0;
+    width:100%;
+    background-color: gray ;
+    border-bottom: 1px solid #c9bd47;
+    text-align: center;
+  }
+
+  body{
+    font-family: fantasy;
+    background-color: whitesmoke;
+    text-align: center;
+    justify-content: center;
+  }
+
+  figure{
+    display: flex;
+    justify-content:center; /* Horizontal centering */
     align-items:center;
+    height: 250px;
+    width: 250px;
+    background-color: #e0d460 ;
+    border-radius: 50%;
+    border: 30px solid #c9bd47;
+  }
+
+h2 {
+  font-size: 50px;
 }
 
-button {
-    width:50px;
-    transition:height 0.08s;
+h3 {
+  font-size: 50px;
 }
 
-
-
+h4 {
+  font-size: 100px;
 }
 
-.coin {
-    position:relative;
-    cursor:grab;
-    height:500px;
-    width:500px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+button{
+  height: 200px;
+  width: 200px;
+  background-color: whitesmoke ;
 }
+
+button:hover {
+background-color: gray;

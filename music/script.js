@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded",function(){
    const hi = new Audio ("sounds/hihat.wav");
    const cow = new Audio ("sounds/cowbell.wav");
    const clap = new Audio ("sounds/clap.wav");
+   const baby =new Audio("sounds/baby-laughing-meme.mp3")
+   const violin =new Audio("sounds/violin.mp3")
 const kickDiv =document.querySelector("#kick");
 const michaelDiv =document.querySelector("#michael");
 const yuhDiv =document.querySelector("#yuh");
@@ -17,6 +19,8 @@ const openDiv =document.querySelector("#open");
 const hiDiv =document.querySelector("#hi");
 const cowDiv =document.querySelector("#cow");
 const clapDiv =document.querySelector("#clap");
+const babyDiv=document.querySelector("#baby");
+const violinDiv=document.querySelector("#violin");
 window.addEventListener("keydown",function(event){
     if (event.key == "a"){
         kick.currentTime = 0;
@@ -45,11 +49,37 @@ window.addEventListener("keydown",function(event){
               snareDiv.classList.add("active");
 
 
-} else if (event.key =="f"){
-            fah.currentTime = 0;
-            fah.play();
-              kickDiv.classList.add("active");
+} else if (event.key =="h"){
+            open.currentTime = 0;
+            open.play();
+              openDiv.classList.add("active");
                }
+               else if (event.key =="j"){
+                hi.currentTime = 0;
+                hi.play ();
+                hiDiv.classList.add("active");
+               }
+               else if (event.key =="k"){
+                cow.currentTime = 0;
+                cow.play();
+                cowDiv.classList.add("active");
+            }
+            else if (event.key =="l"){
+                clap.currentTime = 0;
+                clap.play();
+                clapDiv.classList.add("active");
+            }
+            else if (event.key =="z"){
+                baby.currentTime = 0;
+                baby.play();
+                babyDiv.classList.add("active");
+
+            }
+            else if (event.key=="x"){
+                violin.currentTime = 0
+                violin.play();
+                violinDiv.classList.add("active");
+            }
         })
 
 window.addEventListener("keyup", function(event){
@@ -69,6 +99,23 @@ else if (event.key=="f"){
 else if (event.key=="g"){
     snareDiv.classList.remove("active");
 }
-
+else if (event.key=="h"){
+    openDiv.classList.remove("active");
+}
+else if (event.key=="j"){
+    hiDiv.classList.remove("active");
+}
+else if (event.key =="k"){
+    cowDiv.classList.remove("active");
+}
+else if (event.key =="l"){
+    clapDiv.classList.remove("active");
+}
+else if (event.key =="z"){
+    babyDiv.classList.remove("active");
+}
+else if (event.key=="x"){
+    violinDiv.classList.remove("active");
+}
   })
  })

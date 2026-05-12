@@ -1,19 +1,24 @@
 const  alarma = new Audio ("sound/alarma.mp3");
-let counter = 25;
+let counter = "00:01" ;
 
 function count() {
+   if (counter > 0){
+ counter--;
+ console.log(counter);
+document.querySelector('h1').innerHTML = counter;
+
+}
+else if (counter== 0){
     counter--;
-    document.querySelector('h1').innerHTML = counter;
+    alarma.currentTime = 0;
+    alarma.play();
+}
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('button').onclick = function(){
-    setInterval(count, 1000);
-    document.querySelector("button").disabled=true;
-    if (counter== 0){
-        alarma.currentTime = 0
-        alarma.play();
-    }
-    if function () == -1
-    };
+        setInterval(count, 1000);
+        document.querySelector("button").disabled=true;
+
+        }
 });
